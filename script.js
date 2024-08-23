@@ -1,6 +1,6 @@
-let buttonRate = document.querySelectorAll('.rate');
-let buttonSubmit = document.querySelector('#botao');
-let dispNone = document.querySelector('#container-thx');
+const buttonRate = document.querySelectorAll('.rate');
+const buttonSubmit = document.querySelector('#botao');
+const dispNone = document.querySelector('#container-thx');
 
 
 
