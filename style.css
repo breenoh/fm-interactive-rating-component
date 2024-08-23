@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    /* cor do paragrafo*/
+    --dark-blue: #252d37;
+    --very-dark-blue: #121417;
+    --orange: hsl(25, 97%, 53%);
+
+}
+
+body {
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background-color: black;
+}
+
+/* OCULTOoOOOOoOOo! */
+
+#oculto {
+    display: none;
+}
+
+
+#container {
+    border-radius: 15px;
+    width: 330px;
+    margin: 154px auto;
+    padding: 20px;
+    background: var(--very-dark-blue);
+}
+
+#icon-star {
+    display: inline-block;
+    padding: 10px;
+    background-color: #272e38a8;
+    border-radius: 50%;
+  
+}
+
+.img {
+    background: url(images/icon-star.svg) no-repeat top center/cover;
+    width: 15px;
+    height: 15px;
+}
+
+h1 {
+    color: var(--white);
+    padding: 20px 0;
+    font-size: 25px;
+}
+
+.p-rating {
+    padding-bottom: 25px;
+    font-size: 14px;
+    color: var(--light-grey);
+
+}
+
+/* RATINNNNNNNNNNNG AREA */
+
+#rating-area {
+    display: flex;
+    color: var(--light-grey);
+    gap: 15px;
+    justify-content: center;
+    padding-bottom: 25px;
+    
+
+}
+
+#rating-area .rate {
+    border-radius: 50%;
+    padding: 15px;
+    background-color: #272e38a8;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#rating-area .rate:hover {
+    background-color: white;
+    color: black;
+}
+
+#rating-area .rate.active {
+    background-color: var(--orange);
+    color: black;
+}
+
+
+/* BOTÃAAAAAAAAAAO */
+
+#botao {
+    display: block;
+    margin: auto;
+    padding: 10px 100px;
+    border-radius: 18px;
+    border: none;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--orange);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#botao:hover {
+    background-color: white;
+    color: black;
+}
+
+/* fooooootteeeer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    display: none;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* PAGINA NO AGRADECIMENTO!! */
+
+#container-thx {
+    border-radius: 15px;
+    width: 330px;
+    margin: 154px auto;
+    padding: 20px;
+    background: var(--very-dark-blue);
+
+    position: relative;
+    z-index: 10;
+    margin-top: -545px !important;
+    
+}
+
+#icon-thx {
+    padding: 10px;
+    margin: auto;
+}
+
+.img-thx {
+    margin: auto;
+    background: url(images/illustration-thank-you.svg) no-repeat center;
+    width: 250px;
+    height: 150px;
+}
+
+.thank-you-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.p-thx {
+    background-color: var(--dark-blue);
+    color: var(--orange);
+    padding: 5px 15px;
+    border-radius: 20px;
+    
+    
+}
+
+.p-thank-you {
+    font-size: 14px;
+    color: var(--light-grey);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.disp-none {
+    display: none;
+
+}
+
+
