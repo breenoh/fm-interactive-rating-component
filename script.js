@@ -1,17 +1,17 @@
-const buttonRate = document.querySelectorAll('.rate');
-const buttonSubmit = document.querySelector('#botao');
-const dispNone = document.querySelector('#container-thx');
+const mainContainer = document.querySelector('#main-container');
+const containerThx = document.querySelector('#container-thx');
+const submitButton = document.querySelector('#botao');
+const rating = document.querySelector('#rating'); //peguei o span!
+const rates = document.querySelectorAll('.btn');
 
 
+rates.forEach((rate) => {
+    rate.addEventListener('click', () => {
+        rating.innerHTML = rate.innerHTML
+    });
+});
 
 
-
-
-
-
-// aqui colocamos dispnone no container de agradecimento, que aparecera depois de dar um rating
-
-// colocar condição para ser  obrigatorio votar para apenas assim o botao submit funcionar
-buttonSubmit.addEventListener('click', function () {
-    dispNone.classList.toggle('disp-none');
+submitButton.addEventListener('click', () => {
+    containerThx.classList.remove('disp-none');
 });

@@ -25,7 +25,7 @@
 
   <!-- Rating state start -->
 
-  <div id="container" class="">
+  <div id="main-container" class="">
     <div id="icon-star">
       <div class="img"></div>
     </div>
@@ -39,11 +39,13 @@
 
     <div id="rating-area">
       
-        <div id="star1" class="rate active">1</div>
-        <div id="star2" class="rate">2</div>
-        <div id="star3" class="rate">3</div>
-        <div id="star4" class="rate">4</div>
-        <div id="star5" class="rate">5</div>
+        <ul>
+          <li><button class="btn ">1</button></li>
+          <li><button class="btn">2</button></li>
+          <li><button class="btn">3</button></li>
+          <li><button class="btn">4</button></li>
+          <li><button class="btn">5</button></li>
+        </ul>
 
     </div>
 
@@ -61,7 +63,7 @@
       </div>
 
       <div class="thank-you-text">
-        <p class="p-thx">You selected <span>4</span> out of 5</p>
+        <p class="p-thx">You selected <span id="rating">4</span> out of 5</p>
         <h1>Thank you!</h1>
         <p class="p-thank-you">
           We appreciate you taking the time to give a rating. If you ever need more support,

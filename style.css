@@ -30,7 +30,7 @@ body {
 }
 
 
-#container {
+#main-container {
     border-radius: 15px;
     width: 330px;
     margin: 154px auto;
@@ -69,6 +69,7 @@ h1 {
 
 #rating-area {
     display: flex;
+
     color: var(--light-grey);
     gap: 15px;
     justify-content: center;
@@ -77,23 +78,37 @@ h1 {
 
 }
 
-#rating-area .rate {
-    border-radius: 50%;
+ul {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+
+ul li .btn {
+    border: none;
     padding: 15px;
-    background-color: #272e38a8;
-    font-size: 14px;
-    font-weight: bold;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 800;
+
 }
 
-#rating-area .rate:hover {
-    background-color: white;
-    color: black;
+ul li .btn:hover {
+    background-color: var(--white);
+    color: var(--very-dark-blue);
 }
 
-#rating-area .rate.active {
+
+ ul li button:focus {
     background-color: var(--orange);
-    color: black;
-}
+    color: var(--very-dark-blue);
+} 
 
 
 /* BOTÃAAAAAAAAAAO */
@@ -109,6 +124,8 @@ h1 {
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
+    letter-spacing: 1px;
+    transition: 0.2s;
 }
 
 #botao:hover {
